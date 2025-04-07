@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalhando com Imagens em HTML</title>
+</head>
+<body>
+
+  <h1>Trabalhando com Imagens em HTML</h1>
+
+  <!-- Container das colunas -->
+  <div style="display: flex; justify-content: space-around; text-align: center;">
+
+    <!-- Coluna 1 -->
+    <div>
+      <h2>Imagem da Internet</h2>
+      <img src="https://blog-leiturinha-novo.s3.us-east-1.amazonaws.com/production/uploads/2022/06/iStock-1314796448-1.jpg" alt="Imagem da internet" width="250">
+      <p>Imagem carregada de um link online.</p>
+    </div>
+
+    <!-- Coluna 2 -->
+    <div>
+      <h2>Imagem Local</h2>
+      <img src="img/aula2/elefante.webp" alt="Imagem local" width="250">
+      <p>Imagem armazenada localmente na pasta do projeto.</p>
+    </div>
+
+    <!-- Coluna 3 -->
+    <div>
+      <h2>Imagem com ID</h2>
+      <img id="imagemExemplo" src="img/aula2/tucano.jpg" alt="Imagem com ID" width="250">
+      <p>Imagem com o atributo <code>id</code> definido.</p>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <h2>Atributos da tag &lt;img&gt; e elementos usados nas colunas</h2>
+  <ul>
+    <li><strong>src:</strong> caminho ou endereço da imagem.</li>
+    <li><strong>alt:</strong> texto alternativo se a imagem não for exibida.</li>
+    <li><strong>width:</strong> define a largura da imagem.</li>
+    <li><strong>height:</strong> define a altura da imagem (opcional).</li>
+    <li><strong>id:</strong> identificação única do elemento na página.</li>
+    <li><strong>&lt;div&gt;:</strong> elemento de divisão usado para agrupar e organizar conteúdo em blocos.</li>
+    <li><strong>style="display: flex":</strong> aplica o modelo de layout flexível, organizando os elementos filhos em linha (horizontalmente).</li>
+    <li><strong>justify-content: space-around:</strong> distribui o espaço entre os elementos igualmente, deixando espaço antes, entre e depois das colunas.</li>
+    <li><strong>text-align: center:</strong> centraliza o conteúdo textual e visual dentro de cada coluna.</li>
+  </ul>
+
+</body>
+</html>
