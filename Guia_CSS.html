@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Guia Inicial de CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    th, td {
+        border: 1px solid #aaa;
+        padding: 8px 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #ddd;
+    }
+    h2 {
+        margin-top: 40px;
+        color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Guia Inicial de CSS</h1>
+
+  <section>
+    <h2>Formas de Aplicar CSS</h2>
+
+    <h3>1. CSS Inline</h3>
+    <pre><code>&lt;p style="color: red; font-size: 20px;"&gt;Texto em vermelho&lt;/p&gt;</code></pre>
+    <p>🔴 Usado apenas em casos muito pontuais. Evite para projetos maiores.</p>
+
+    <h3>2. CSS Interno</h3>
+    <pre><code>&lt;style&gt;
+  p {
+    color: blue;
+    font-size: 18px;
+  }
+&lt;/style&gt;
+&lt;p&gt;Texto em azul&lt;/p&gt;</code></pre>
+    <p>🟡 Útil para páginas únicas ou testes rápidos.</p>
+
+    <h3>3. CSS Externo</h3>
+    <pre><code>&lt;link rel="stylesheet" href="estilo.css"&gt;
+&lt;p&gt;Texto com estilo externo&lt;/p&gt;
+
+Arquivo estilo.css:
+p {
+  color: green;
+  font-size: 16px;
+}</code></pre>
+    <p>✅ É a forma mais recomendada para projetos reais.</p>
+  </section>
+
+  <section>
+    <h2>Elementos Básicos e Essenciais do CSS</h2>
+
+    <h3>Seletores</h3>
+    <ul>
+      <li><code>p { ... }</code> — todos os parágrafos</li>
+      <li><code>.destaque { ... }</code> — elementos com class="destaque"</li>
+      <li><code>#principal { ... }</code> — elemento com id="principal"</li>
+    </ul>
+
+    <h3>Propriedades e Valores</h3>
+    <pre><code>h1 {
+  color: blue;
+  font-size: 24px;
+  text-align: center;
+}</code></pre>
+
+    <h3>Comentários</h3>
+    <p>CSS:</p>
+    <pre><code>/* Este é um comentário */</code></pre>
+    <p>HTML:</p>
+    <pre><code>&lt;!-- MEU COMENTÁRIO --&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2>Propriedades Comuns</h2>
+    <ul>
+      <li><code>color</code> — Cor do texto: <code>color: red;</code></li>
+      <li><code>background-color</code> — Fundo: <code>background-color: yellow;</code></li>
+      <li><code>font-size</code> — Tamanho: <code>font-size: 20px;</code></li>
+      <li><code>text-align</code> — Alinhamento: <code>text-align: center;</code></li>
+      <li><code>margin</code>, <code>padding</code>, <code>border</code> etc.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Organização de Arquivos</h2>
+    <pre><code>meu_projeto/
+├── index.html
+├── pagina2.html
+├── pagina3.html
+└── assets/
+    ├── style.css
+    ├── js/
+    │   └── Codigo.js
+    └── img/
+        ├── Imagem1.png
+        ├── Imagem2.jpeg
+        ├── Imagem3.jpg
+        └── Imagem4.png</code></pre>
+  </section>
+
+  <section>
+    <h2>Texto e Fonte</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>font-family</td><td>Define a fonte do texto</td><td>font-family: Arial;</td></tr>
+      <tr><td>font-weight</td><td>Define a espessura da fonte</td><td>font-weight: bold;</td></tr>
+      <tr><td>font-style</td><td>Estilo da fonte (normal, itálico)</td><td>font-style: italic;</td></tr>
+      <tr><td>text-decoration</td><td>Decoração do texto (sublinhado, etc.)</td><td>text-decoration: underline;</td></tr>
+      <tr><td>line-height</td><td>Espaçamento entre linhas</td><td>line-height: 1.5;</td></tr>
+      <tr><td>letter-spacing</td><td>Espaçamento entre letras</td><td>letter-spacing: 2px;</td></tr>
+      <tr><td>text-transform</td><td>Transforma o texto (maiúsculas, etc.)</td><td>text-transform: uppercase;</td></tr>
+    </table>
+    
+    <h2>Cores e Fundo</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>background-image</td><td>Imagem de fundo</td><td>background-image: url('img/fundo.jpg');</td></tr>
+      <tr><td>background-size</td><td>Tamanho da imagem de fundo</td><td>background-size: cover;</td></tr>
+      <tr><td>opacity</td><td>Transparência do elemento</td><td>opacity: 0.5;</td></tr>
+      <tr><td>color</td><td>Cor do texto</td><td>color: #333;</td></tr>
+      <tr><td>background-color</td><td>Cor de fundo</td><td>background-color: #fafafa;</td></tr>
+    </table>
+    
+    <h2>Bordas</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>border</td><td>Define a borda</td><td>border: 1px solid black;</td></tr>
+      <tr><td>border-radius</td><td>Arredonda os cantos da borda</td><td>border-radius: 10px;</td></tr>
+      <tr><td>box-shadow</td><td>Sombra ao redor do elemento</td><td>box-shadow: 2px 2px 5px gray;</td></tr>
+    </table>
+    
+    <h2>Tamanho e Espaçamento</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>width</td><td>Largura do elemento</td><td>width: 300px;</td></tr>
+      <tr><td>height</td><td>Altura do elemento</td><td>height: 200px;</td></tr>
+      <tr><td>min-width</td><td>Largura mínima permitida</td><td>min-width: 150px;</td></tr>
+      <tr><td>max-width</td><td>Largura máxima permitida</td><td>max-width: 100%;</td></tr>
+      <tr><td>min-height</td><td>Altura mínima permitida</td><td>min-height: 100px;</td></tr>
+      <tr><td>max-height</td><td>Altura máxima permitida</td><td>max-height: 400px;</td></tr>
+      <tr><td>padding</td><td>Espaçamento interno total</td><td>padding: 10px;</td></tr>
+      <tr><td>padding-top</td><td>Espaço interno no topo</td><td>padding-top: 5px;</td></tr>
+      <tr><td>padding-right</td><td>Espaço interno à direita</td><td>padding-right: 10px;</td></tr>
+      <tr><td>padding-bottom</td><td>Espaço interno na parte inferior</td><td>padding-bottom: 5px;</td></tr>
+      <tr><td>padding-left</td><td>Espaço interno à esquerda</td><td>padding-left: 10px;</td></tr>
+      <tr><td>margin</td><td>Espaçamento externo total</td><td>margin: 20px;</td></tr>
+      <tr><td>margin-top</td><td>Espaço externo no topo</td><td>margin-top: 10px;</td></tr>
+      <tr><td>margin-right</td><td>Espaço externo à direita</td><td>margin-right: 15px;</td></tr>
+      <tr><td>margin-bottom</td><td>Espaço externo na parte inferior</td><td>margin-bottom: 10px;</td></tr>
+      <tr><td>margin-left</td><td>Espaço externo à esquerda</td><td>margin-left: 15px;</td></tr>
+      <tr><td>box-sizing</td><td>Inclui padding e border dentro da largura e altura definidas</td><td>box-sizing: border-box;</td></tr>
+      <tr><td>object-fit</td><td>Controla o redimensionamento de mídias (img, video) dentro do contêiner</td><td>object-fit: cover;</td></tr>
+    </table>
+    
+    <h2>Posicionamento e Layout</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>display</td><td>Tipo de exibição (block, inline, flex)</td><td>display: flex;</td></tr>
+      <tr><td>position</td><td>Tipo de posicionamento</td><td>position: absolute;</td></tr>
+      <tr><td>top, left, etc</td><td>Distância a partir das bordas</td><td>top: 10px; left: 20px;</td></tr>
+      <tr><td>z-index</td><td>Ordem de empilhamento</td><td>z-index: 5;</td></tr>
+      <tr><td>float</td><td>Alinhamento à esquerda/direita</td><td>float: right;</td></tr>
+      <tr><td>clear</td><td>Controla o fluxo com float</td><td>clear: both;</td></tr>
+    </table>
+    
+    <h2>Flexbox (Layout moderno)</h2>
+    <table>
+      <tr><th>Propriedade</th><th>Descrição</th><th>Exemplo</th></tr>
+      <tr><td>display: flex</td><td>Ativa o Flexbox</td><td>display: flex;</td></tr>
+      <tr><td>justify-content</td><td>Alinha itens no eixo horizontal</td><td>justify-content: center;</td></tr>
+      <tr><td>align-items</td><td>Alinha itens no eixo vertical</td><td>align-items: center;</td></tr>
+      <tr><td>flex-direction</td><td>Define direção do eixo</td><td>flex-direction: row-reverse;</td></tr>
+      <tr><td>flex-wrap</td><td>Permite que itens quebrem linha</td><td>flex-wrap: wrap;</td></tr>
+    </table>
+
+</body>
+</html>
