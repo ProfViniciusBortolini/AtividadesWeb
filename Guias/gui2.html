@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Inicial de HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f8;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        .obs {
+            background: #fff;
+            border-left: 6px solid #2c3e50;
+            padding: 10px 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .titulo-resultado {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .resultado {
+            margin-top: 10px;
+            padding: 25px;
+            border: 2px solid #2c3e50;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        hr {
+            margin: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Guia Inicial de HTML</h1>
+
+<!-- ========================= -->
+<section>
+    <h2>Estrutura Básica</h2>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Conteúdo visível aqui.
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    Conteúdo visível aqui.
+</div>
+
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Títulos</h2>
+
+<pre><code>&lt;h1&gt;Este é um h1&lt;/h1&gt;
+&lt;h2&gt;Este é um h2&lt;/h2&gt;
+&lt;h3&gt;Este é um h3&lt;/h3&gt;
+&lt;h4&gt;Este é um h4&lt;/h4&gt;
+&lt;h5&gt;Este é um h5&lt;/h5&gt;
+&lt;h6&gt;Este é um h6&lt;/h6&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <h1>Este é um h1</h1>
+    <h2>Este é um h2</h2>
+    <h3>Este é um h3</h3>
+    <h4>Este é um h4</h4>
+    <h5>Este é um h5</h5>
+    <h6>Este é um h6</h6>
+</div>
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Parágrafo, quebra e linha horizontal</h2>
+
+<pre><code>&lt;p&gt;Isso é um parágrafo.&lt;/p&gt;
+Linha 1&lt;br&gt;Linha 2
+&lt;hr&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <p>Isso é um parágrafo.</p>
+    Linha 1<br> Linha 2
+    <hr>
+</div>
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Negrito e Itálico</h2>
+
+<pre><code>&lt;b&gt;Negrito&lt;/b&gt;
+&lt;i&gt;Itálico&lt;/i&gt;
+&lt;strong&gt;Importante&lt;/strong&gt;
+&lt;em&gt;Ênfase&lt;/em&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <b>Negrito</b><br>
+    <i>Itálico</i><br>
+    <strong>Importante</strong><br>
+    <em>Ênfase</em>
+</div>
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Links</h2>
+
+<pre><code>&lt;a href="https://google.com"&gt;Ir para o Google&lt;/a&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <a href="https://google.com" target="_blank">Ir para o Google</a>
+</div>
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Imagem</h2>
+
+<pre><code>&lt;img src="https://via.placeholder.com/150" alt="Imagem exemplo"&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <img src="https://via.placeholder.com/150" alt="Imagem exemplo">
+</div>
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Listas</h2>
+
+<h3>Lista não ordenada</h3>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</div>
+
+<h3>Lista ordenada</h3>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;Passo 1&lt;/li&gt;
+  &lt;li&gt;Passo 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+    <ol>
+        <li>Passo 1</li>
+        <li>Passo 2</li>
+    </ol>
+</div>
+
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Tabelas</h2>
+
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+<table>
+<tr>
+<th>Nome</th>
+<th>Idade</th>
+</tr>
+<tr>
+<td>Ana</td>
+<td>22</td>
+</tr>
+</table>
+</div>
+
+</section>
+
+<hr>
+
+<!-- ========================= -->
+<section>
+<h2>Formulário</h2>
+
+<pre><code>&lt;form&gt;
+Nome: &lt;input type="text"&gt;
+&lt;br&gt;&lt;br&gt;
+Email: &lt;input type="email"&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;button&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+<div class="titulo-resultado">Resultado:</div>
+<div class="resultado">
+<form>
+Nome: <input type="text"><br><br>
+Email: <input type="email"><br><br>
+<button>Enviar</button>
+</form>
+</div>
+
+</section>
+
+</body>
+</html>

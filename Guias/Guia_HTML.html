@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guia Inicial de HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        th,
+        td {
+            border: 1px solid #aaa;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #2c3e50;
+        }
+
+        .obs {
+            background: #fff;
+            border-left: 6px solid #2c3e50;
+            padding: 10px 12px;
+            border-radius: 6px;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            padding: 25px;
+            border: 2px solid #2c3e50;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título da área de resultado */
+        .titulo-resultado {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Guia Inicial de HTML</h1>
+
+    <section>
+        <h2>O que é HTML?</h2>
+        <p>HTML é a linguagem de marcação usada para estruturar o conteúdo de uma página (texto, links, imagens, listas,
+            tabelas, formulários etc.).</p>
+        <div class="obs">
+            <strong>Observação:</strong> este guia foca em HTML “básico/tradicional”. Elementos semânticos do HTML5
+            (ex.: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>,
+            <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>,
+            <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>) ficarão para o outro documento.
+        </div>
+    </section>
+
+    <section>
+        <h2>Estrutura Básica de um Documento</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Conteúdo visível aqui.
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>Tags principais</h3>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> — informa ao navegador o tipo de documento.</li>
+            <li><code>&lt;html&gt;</code> — elemento raiz do documento.</li>
+            <li><code>&lt;head&gt;</code> — configurações/metadata (não aparece no conteúdo).</li>
+            <li><code>&lt;title&gt;</code> — título exibido na aba do navegador.</li>
+            <li><code>&lt;body&gt;</code> — tudo o que aparece na página.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Comentários</h2>
+        <pre><code>&lt;!-- Isto é um comentário em HTML --&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>Texto e Estrutura</h2>
+
+        <h3>Títulos</h3>
+        <p>Use <code>h1</code> a <code>h6</code> para títulos em níveis.</p>
+        <pre><code>
+            &lt;h1&gt;Título principal&lt;/h1&gt;
+            &lt;h2&gt;Subtítulo&lt;/h2&gt;
+            &lt;h3&gt;Seção menor&lt;/h3&gt;
+        </code></pre>
+
+        <div class="titulo-resultado">Resultado:</div>
+
+        <div class="resultado">
+            <h1>Este é um h1</h1>
+            <h2>Este é um h2</h2>
+            <h3>Este é um h3</h3>
+            <h4>Este é um h4</h4>
+            <h5>Este é um h5</h5>
+            <h6>Este é um h6</h6>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <h3>Parágrafo, quebra de linha e linha horizontal</h3>
+    <pre><code>&lt;p&gt;Isso é um parágrafo.&lt;/p&gt;
+Quebra de linha aqui&lt;br&gt;continua aqui.
+&lt;hr&gt;</code></pre>
+
+    <div class="resultado">
+        <p>O paragrafo a seguir foi gerado com texto aleatório: lorem, sendo usado "br" para quebrar linha <br>. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem quisquam minus officia nisi dolores
+            sunt quos vitae saepe aliquid. Maiores ullam corporis vitae deleniti consectetur excepturi neque facilis
+            aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vero animi atque earum quasi,
+            voluptates vel quae autem exercitationem maxime explicabo, architecto iste consectetur sunt corrupti
+            obcaecati cum commodi. Laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non alias
+            expedita accusamus dignissimos corrupti deserunt officiis nisi consequuntur sapiente! Tempore deserunt,
+            ipsam laboriosam repellendus harum cum similique dolore totam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Mollitia quisquam, minima iure eligendi velit vero harum placeat pariatur facere neque
+            sapiente dolore deserunt incidunt beatae eveniet nihil consectetur quas at. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Optio voluptatum molestiae iure distinctio beatae hic pariatur mollitia alias
+            vitae? Eligendi omnis aperiam nihil culpa provident itaque at tempore vero. Mollitia. Lorem ipsum dolor sit,
+            amet consectetur adipisicing elit. Dignissimos saepe, debitis, aliquam doloribus accusantium cumque amet
+            consectetur sit animi facilis, similique sunt ea aspernatur molestias tempora voluptatibus unde illo.
+            Perferendis.</p>
+    </div>
+
+    <h3>Negrito, itálico e destaque</h3>
+    <pre><code>&lt;b&gt;Negrito (visual)&lt;/b&gt;
+&lt;i&gt;Itálico (visual)&lt;/i&gt;
+
+&lt;strong&gt;Importante&lt;/strong&gt;
+&lt;em&gt;Ênfase&lt;/em&gt;</code></pre>
+
+
+    <div class="resultado">
+        <p>Texto em <b>negrito</b> <br>
+            Texto em <strong> Strong </strong> <br>
+            Texto em <i> Itálico </i> <br>
+            Texto em <em> emfase</em>
+        </p>
+    </div>
+
+
+    <h3>Texto pré-formatado e código</h3>
+    <pre><code>&lt;pre&gt;
+Texto respeita
+quebras e espaços.
+&lt;/pre&gt;
+
+&lt;code&gt;console.log("Olá");&lt;/code&gt;</code></pre>
+
+    <h3>Span e Div</h3>
+    <pre><code>&lt;div&gt;Bloco (ocupa uma “linha inteira”)&lt;/div&gt;
+&lt;span&gt;Inline (no meio do texto)&lt;/span&gt;</code></pre>
+    </section>
+
+    <section>
+        <h2>Links e Imagens</h2>
+
+        <div class="resultado">
+            <img src="../img/escudos/gremio.svg" alt="">
+            <img src=""
+                alt="Alt corresponde ao atributo que irá conter a legenda da imagem (quando a imagem não for carregada)">
+        </div>
+
+        <h3>Links</h3>
+        <pre><code>&lt;a href="https://exemplo.com"&gt;Ir para o site&lt;/a&gt;
+
+&lt;a href="pagina2.html"&gt;Ir para outra página&lt;/a&gt;
+
+&lt;a href="#contato"&gt;Ir para uma parte da página&lt;/a&gt;</code></pre>
+
+        <h3>Imagem</h3>
+        <pre><code>&lt;img src="img/foto.jpg" alt="Descrição da imagem"&gt;</code></pre>
+        <p><code>alt</code> é essencial para acessibilidade e caso a imagem não carregue.</p>
+    </section>
+
+    <section>
+        <h2>Listas</h2>
+
+        <h3>Lista não ordenada</h3>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <div class="resultado">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+
+        <h3>Lista ordenada</h3>
+        <p>Pode ser usado o atributo type para definir o tipo de lista: letras maiúsculas, minúsculas, romana ou
+            númerica. </p>
+        <pre><code>&lt;ol&gt;
+  &lt;li&gt;Passo 1&lt;/li&gt;
+  &lt;li&gt;Passo 2&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <div class="resultado">
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+            <ol type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+        </div>
+
+        <h3>Lista de definição</h3>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Linguagem de marcação&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    </section>
+
+    <div class="resultado">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação</dd>
+            <dt>Usando tag DT</dt>
+            <dd>Usando tag DD</dd>
+        </dl>
+    </div>
+
+    <section>
+        <h2>Tabelas</h2>
+        <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ana&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <h3>Tags importantes em tabelas</h3>
+        <ul>
+            <li><code>&lt;table&gt;</code> — tabela</li>
+            <li><code>&lt;tr&gt;</code> — linha</li>
+            <li><code>&lt;th&gt;</code> — célula de cabeçalho</li>
+            <li><code>&lt;td&gt;</code> — célula comum</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Formulários</h2>
+
+        <h3>Estrutura básica</h3>
+        <pre><code>&lt;form action="enviar.php" method="post"&gt;
+  &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="nome" name="nome"&gt;
+
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+        <h3>Inputs comuns</h3>
+        <pre><code>&lt;input type="text" name="usuario"&gt;
+&lt;input type="password" name="senha"&gt;
+&lt;input type="email" name="email"&gt;
+&lt;input type="number" name="idade"&gt;
+&lt;input type="date" name="data"&gt;
+&lt;input type="checkbox" name="aceito"&gt;
+&lt;input type="radio" name="sexo" value="f"&gt;</code></pre>
+
+        <h3>Outros campos</h3>
+        <pre><code>&lt;textarea name="mensagem" rows="4" cols="30"&gt;&lt;/textarea&gt;
+
+&lt;select name="cidade"&gt;
+  &lt;option value="sp"&gt;São Paulo&lt;/option&gt;
+  &lt;option value="rj"&gt;Rio de Janeiro&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+        <h3>Tags úteis em formulários</h3>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Para que serve</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td><code>form</code></td>
+                <td>Define o formulário</td>
+                <td><code>&lt;form action="x" method="post"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>label</code></td>
+                <td>Rótulo do campo</td>
+                <td><code>&lt;label for="email"&gt;Email&lt;/label&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>input</code></td>
+                <td>Campo de entrada</td>
+                <td><code>&lt;input type="text"&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>textarea</code></td>
+                <td>Texto longo</td>
+                <td><code>&lt;textarea&gt;&lt;/textarea&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>select</code></td>
+                <td>Lista suspensa</td>
+                <td><code>&lt;select&gt;...&lt;/select&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>option</code></td>
+                <td>Opção do select</td>
+                <td><code>&lt;option&gt;...&lt;/option&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>button</code></td>
+                <td>Botão</td>
+                <td><code>&lt;button type="submit"&gt;</code></td>
+            </tr>
+        </table>
+
+        <div class="obs">
+            <strong>Dica prática:</strong> em formulários, o atributo <code>name</code> é o que “vai” no envio do
+            formulário.
+        </div>
+    </section>
+
+    <section>
+        <h2>Atributos Comuns (muito usados)</h2>
+        <table>
+            <tr>
+                <th>Atributo</th>
+                <th>Onde aparece</th>
+                <th>Para que serve</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td><code>id</code></td>
+                <td>quase qualquer tag</td>
+                <td>Identificador único</td>
+                <td><code>id="principal"</code></td>
+            </tr>
+            <tr>
+                <td><code>class</code></td>
+                <td>quase qualquer tag</td>
+                <td>Grupo/estilo via CSS</td>
+                <td><code>class="destaque"</code></td>
+            </tr>
+            <tr>
+                <td><code>href</code></td>
+                <td><code>a</code></td>
+                <td>Destino do link</td>
+                <td><code>href="pagina.html"</code></td>
+            </tr>
+            <tr>
+                <td><code>src</code></td>
+                <td><code>img</code></td>
+                <td>Caminho do arquivo</td>
+                <td><code>src="img/foto.jpg"</code></td>
+            </tr>
+            <tr>
+                <td><code>alt</code></td>
+                <td><code>img</code></td>
+                <td>Texto alternativo</td>
+                <td><code>alt="Logo"</code></td>
+            </tr>
+            <tr>
+                <td><code>title</code></td>
+                <td>várias tags</td>
+                <td>Dica ao passar o mouse</td>
+                <td><code>title="Clique aqui"</code></td>
+            </tr>
+            <tr>
+                <td><code>name</code></td>
+                <td>inputs</td>
+                <td>Nome do dado enviado</td>
+                <td><code>name="email"</code></td>
+            </tr>
+            <tr>
+                <td><code>value</code></td>
+                <td>inputs</td>
+                <td>Valor do campo</td>
+                <td><code>value="123"</code></td>
+            </tr>
+            <tr>
+                <td><code>type</code></td>
+                <td><code>input</code></td>
+                <td>Tipo do input</td>
+                <td><code>type="password"</code></td>
+            </tr>
+            <tr>
+                <td><code>placeholder</code></td>
+                <td>inputs/textarea</td>
+                <td>Texto de exemplo</td>
+                <td><code>placeholder="Digite..."</code></td>
+            </tr>
+            <tr>
+                <td><code>required</code></td>
+                <td>inputs</td>
+                <td>Campo obrigatório</td>
+                <td><code>required</code></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Mini exemplo completo</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Exemplo&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Cadastro&lt;/h1&gt;
+
+    &lt;p&gt;Preencha o formulário:&lt;/p&gt;
+
+    &lt;form action="enviar.php" method="post"&gt;
+      &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+      &lt;input type="text" id="nome" name="nome" required&gt;
+
+      &lt;br&gt;&lt;br&gt;
+
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" name="email" placeholder="ex: ana@site.com"&gt;
+
+      &lt;br&gt;&lt;br&gt;
+
+      &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+    &lt;/form&gt;
+
+    &lt;hr&gt;
+
+    &lt;p&gt;Acesse nosso &lt;a href="https://exemplo.com"&gt;site&lt;/a&gt;.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+</body>
+
+</html>
